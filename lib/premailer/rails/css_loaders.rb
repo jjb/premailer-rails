@@ -28,7 +28,8 @@ class Premailer
         end
 
         def assets_enabled?
-          ::Rails.configuration.assets.enabled rescue false
+          true
+          # ::Rails.configuration.assets.enabled rescue false
         end
 
         def file_name(path)
